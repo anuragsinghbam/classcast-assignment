@@ -1,38 +1,338 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.main-content {
+  width: 95%;
+  padding: 1em 0;
+  max-width: 546px;
+  margin: 2em auto;
+  box-shadow: 0 6px 12px rgb(35 55 80 / 30%);
+  border-radius: 20px;
+}
+
+.navbar {
+  display: flex;
+  margin: 1em 0 2em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-img {
+  width: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1.5em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+.profile-img img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.nav-icons {
+  display: flex;
+}
+
+.nav-icons div {
+  padding: 1em;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.settings-icon {
+  margin-left: 1.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.health {
+  margin: 4em 0 0;
+  padding: 0 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.health h1 {
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.health-icons {
+  color: white;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin: 0.5em 0 0.8em;
+}
+
+.hours .health-icons {
+  background-color: #4f99f8;
+}
+
+.rpm .health-icons {
+  background-color: #fe796a;
+}
+
+.kcal .health-icons {
+  background-color: #71cb69;
+}
+
+.progress-bar {
+  height: 5px;
+  width: 100px;
+  background-color: #ddd;
+  border-radius: 25px;
+}
+
+.progress-done {
+  width: 75px;
+  height: 5px;
+  border-radius: 25px;
+}
+
+.hours .progress-done {
+  background-color: #4f99f8;
+}
+.rpm .progress-done {
+  background-color: #fe796a;
+}
+.kcal .progress-done {
+  background-color: #71cb69;
+}
+
+.divider {
+  width: 1px;
+  height: 100px;
+  background-color: #ddd;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf9ec;
+  border-radius: 25px;
+  padding: 1em 2em;
+  margin: 3em 2em 0 2em;
+  box-shadow: 0px 13px 0px -10px rgba(252, 252, 252, 1),
+    0px 25px 0px -10px rgba(252, 237, 194, 1);
+}
+
+.sign-up-img {
+  flex: 1;
+}
+
+.sign-up-img img {
+  width: 60%;
+}
+
+.sign-up-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  flex: 1;
+}
+
+.sign-up-btn {
+  background-color: #f2c744;
   color: white;
+  border: none;
+  margin-top: 1em;
+  outline: none;
+  padding: 0.7em 1em;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.sign-up-btn:active {
+  background-color: #dbb132;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.today-training {
+  margin-top: 4em;
+  background-image: linear-gradient(#fff, #f8f9fd);
+  border-radius: 25px;
+  padding: 0 2em 1em;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  padding: 1.5em 2em;
+  margin-top: 1em;
+  color: white;
+  text-align: center;
+  
+}
+
+.blue-box {
+  background-color: #4c95fe;
+  box-shadow: 0px 13px 0px -10px rgba(252, 252, 252, 1),
+    0px 25px 0px -10px rgba(198, 218, 254, 1);
+}
+.red-box {
+  margin-top: 2.5em;
+  background-color: #ff7369;
+  box-shadow: 0px 13px 0px -10px rgba(252, 252, 252, 1),
+    0px 25px 0px -10px rgba(251, 191, 190, 1);
+}
+
+.sport-club {
+  text-align: left;
+}
+
+.box h4 {
+  margin: 0.5em 0 0.8em;
+}
+
+.box h1,
+.box h2 {
+  font-weight: 400;
+}
+.time-stamp {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  margin: 0.4em 0;
+  border-radius: 50%;
+}
+
+.grey-dots {
+  display: flex;
+  width: 30px;
+  justify-content: space-between;
+  margin: 3em auto 0;
+}
+
+.grey-dots .dot {
+  background-color: #555;
+}
+
+
+
+.your-trainers {
+  padding: 0 2em;
+  margin-top: 2em;
+}
+
+.trainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+
+.trainer-profile {
+  display: flex;
+  align-items: center;
+}
+
+.trainer-pic {
+  width: 5em;
+  margin-right: 1em;
+  position: relative;
+}
+.trainer-pic img {
+  width: 100%;
+}
+
+.message-icon {
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  padding: 0.6em 0.8em;
+  color: #333;
+}
+
+.green-dot {
+  width: 18px;
+  height: 18px;
+  background-color: #b4ff91;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+}
+
+@media (max-width: 746px) {
+  html {
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 400px) {
+  .username h2 {
+    font-size: 1.2rem;
+  }
+
+  .username p {
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    width: 60px;
+    margin-right: 1em;
+  }
+
+  .settings-icon {
+    margin-left: 1em;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    zoom: 80%;
   }
 }
