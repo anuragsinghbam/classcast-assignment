@@ -300,6 +300,26 @@ p {
   bottom: 2px;
 }
 
+.bell-icon {
+  position: relative;
+}
+
+.notification-count {
+  color: #fff;
+
+  background-color: #ff7369;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  font-size: 14px;
+}
+
 @media (max-width: 746px) {
   html {
     font-size: 14px;
