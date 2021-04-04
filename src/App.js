@@ -72,7 +72,12 @@ function App() {
         </div>
         <div className='today-training'>
           <h2>Today trainings</h2>
-          <div className='box blue-box'>
+          <div
+            className='box blue-box'
+            style={{
+              backgroundImage: `url("./curves-1.svg")`,
+            }}
+          >
             <div className='sport-club'>
               <h2>Box</h2>
               <h4>Sport Club</h4>
@@ -96,7 +101,12 @@ function App() {
               <div className='dot' />
             </div>
           </div>
-          <div className='box red-box'>
+          <div
+            className='box red-box'
+            style={{
+              backgroundImage: `url("./curves-2.svg")`,
+            }}
+          >
             <div className='sport-club'>
               <h2>Crossfit</h2>
               <h4>Sport Club</h4>
