@@ -73,7 +73,7 @@ function App() {
       <div className="warm-up">
         <h1>40</h1>
         <h5>min</h5>
-        <p>Warm Up</p>
+        <p>Warm-Up</p>
       </div>
       <div className="stretch">
         <h1>20</h1>
@@ -88,21 +88,21 @@ function App() {
     </div>
     <div className="box red-box">
       <div className="sport-club">
-        <h2>Box</h2>
+        <h2>Crossfit</h2>
         <h4>Sport Club</h4>
         <div className="time-stamp">
-          <p>10:00</p>
+          <p>12:00</p>
         </div>
       </div>
       <div className="warm-up">
-        <h1>40</h1>
+        <h1>20</h1>
         <h5>min</h5>
-        <p>Warm Up</p>
+        <p>Warm-Up</p>
       </div>
       <div className="stretch">
         <h1>20</h1>
         <h5>min</h5>
-        <p>Stretch</p>
+        <p>Pull-Ups</p>
       </div>
       <div className="three-dots">
         <div className="dot" />
