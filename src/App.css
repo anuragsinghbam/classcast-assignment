@@ -126,6 +126,15 @@ p {
   border-radius: 25px;
 }
 
+
+.rpm .progress-done {
+  width: 90px;
+}
+
+.kcal .progress-done {
+  width: 35px;
+}
+
 .hours .progress-done {
   background-color: #4f99f8;
 }

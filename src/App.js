@@ -66,7 +66,7 @@ export default function App() {
         </div>
         <div className='sign-up'>
           <div className='sign-up-img'>
-            <img src='./sign-up.png' alt='sign-up image' />
+            <img src='./sign-up.png' alt='cartoon fox' />
           </div>
           <div className='sign-up-text'>
             <p>Sign up for a personal trainer to improve your results</p>
