@@ -1,6 +1,8 @@
 import './App.css'
+import React from 'react'
+import Box from './Box'
 
-function App() {
+export default function App() {
   return (
     <div className='App'>
       <main className='main-content'>
@@ -72,64 +74,24 @@ function App() {
         </div>
         <div className='today-training'>
           <h2>Today trainings</h2>
-          <div
-            className='box blue-box'
-            style={{
-              backgroundImage: `url("./curves-1.svg")`,
-            }}
-          >
-            <div className='sport-club'>
-              <h2>Box</h2>
-              <h4>Sport Club</h4>
-              <div className='time-stamp'>
-                <p>10:00</p>
-              </div>
-            </div>
-            <div className='warm-up'>
-              <h1>40</h1>
-              <h5>min</h5>
-              <p>Warm-Up</p>
-            </div>
-            <div className='stretch'>
-              <h1>20</h1>
-              <h5>min</h5>
-              <p>Stretch</p>
-            </div>
-            <div className='three-dots'>
-              <div className='dot' />
-              <div className='dot' />
-              <div className='dot' />
-            </div>
-          </div>
-          <div
-            className='box red-box'
-            style={{
-              backgroundImage: `url("./curves-2.svg")`,
-            }}
-          >
-            <div className='sport-club'>
-              <h2>Crossfit</h2>
-              <h4>Sport Club</h4>
-              <div className='time-stamp'>
-                <p>12:00</p>
-              </div>
-            </div>
-            <div className='warm-up'>
-              <h1>20</h1>
-              <h5>min</h5>
-              <p>Warm-Up</p>
-            </div>
-            <div className='stretch'>
-              <h1>20</h1>
-              <h5>min</h5>
-              <p>Pull-Ups</p>
-            </div>
-            <div className='three-dots'>
-              <div className='dot' />
-              <div className='dot' />
-              <div className='dot' />
-            </div>
-          </div>
+          <Box
+            boxClass='box blue-box'
+            title='Box'
+            timeStamp='10:00'
+            exercise='Stretch'
+            warmUpTime='40'
+            backgroundImage='./curves-1.svg'
+          />
+
+          <Box
+            boxClass='box red-box'
+            title='Crossfit'
+            timeStamp='12:00'
+            exercise='Pull-Ups'
+            warmUpTime='20'
+            backgroundImage='./curves-2.svg'
+          />
+
           <div className='three-dots grey-dots'>
             <div className='dot' />
             <div className='dot' />
@@ -177,5 +139,3 @@ function App() {
     </div>
   )
 }
-
-export default App
