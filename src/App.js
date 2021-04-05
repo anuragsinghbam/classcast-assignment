@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 import Box from './Box'
+import Trainer from './Trainer'
 
 export default function App() {
   return (
@@ -100,40 +101,19 @@ export default function App() {
         </div>
         <div className='your-trainers'>
           <h2>Your Trainers</h2>
-          <div className='trainer'>
-            <div className='trainer-profile'>
-              <div className='trainer-pic'>
-                <img src='./trainer-1.jpg' alt='' />
-                <div className='green-dot' />
-              </div>
-              <div className='trainer-name'>
-                <h3>John Kavanagh</h3>
-                <h5>MMA Coach</h5>
-              </div>
-            </div>
-            <div className='message-icon'>
-              <h1>
-                <i className='far fa-comment-dots' />
-              </h1>
-            </div>
-          </div>
-          <div className='trainer'>
-            <div className='trainer-profile'>
-              <div className='trainer-pic'>
-                <img src='./trainer-2.jpg' alt='' />
-                <div className='green-dot' />
-              </div>
-              <div className='trainer-name'>
-                <h3>Jacob Jones</h3>
-                <h5>Boxing Coach</h5>
-              </div>
-            </div>
-            <div className='message-icon'>
-              <h1>
-                <i className='far fa-comment-dots' />
-              </h1>
-            </div>
-          </div>
+          <Trainer 
+            profilePic='./trainer-1.jpg'
+            name='John Kavanagh'
+            jobTitle='MMA Coach'
+          />
+          
+          <Trainer 
+            profilePic='./trainer-2.jpg'
+            name='Jacob Jones'
+            jobTitle='Boxing Coach'
+          />
+          
+          
         </div>
       </main>
     </div>
